@@ -8,14 +8,13 @@ Number of elements: 5
 '''
 
 N = int(input("Введите количество элементов: "))
-position_one = 1
-position_two = 3
+position_one = int(input("Введите позицию 1: "))
+position_two = int(input("Введите позицию 2: "))
 result = 1
 numbers_list = list()
 for n in range(-N, N+1):
     numbers_list.append(n)
     if n == position_one or n == position_two:
         result *= numbers_list[n-1]
-
 
 print(f"{numbers_list} -> {result}")
